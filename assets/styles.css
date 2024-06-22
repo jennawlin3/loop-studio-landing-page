@@ -317,8 +317,12 @@ footer {
     }
 
     .hero {
+        background: url(../images/desktop/image-hero.jpg);
+        height: 700px;
+        width: 100%;
         background-size: cover;
-        background-position: 0 70%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     
     .title {
