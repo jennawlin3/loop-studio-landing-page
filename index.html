@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="./assets/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,45 +20,161 @@
   </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
+  <div class="container">
+   <header>
+    <div class="header-container">
+      <img src="./images/logo.svg" alt="Logo" srcset="" class="logo">
+      <nav class="mobile-nav">
+        <img src="./images/icon-hamburger.svg" alt="" srcset="" class="hamburger">
+        <div class="nav-mobile_container hide">
+          <img src="./images/logo.svg" alt="Logo" srcset="" class="logo">
+        <img src="./images/icon-close.svg" alt="" srcset="" class="close">
+        <div class="nav-links">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+        </div>
+      </nav>
+      <nav class="desktop-nav">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+      </nav>
+    </div>
+   </header>
+   <main>
+      <section class="hero">
+        <div class="content-hero">
+          <div class="title">
+            <h1>Inmersive Experiences that deliver</h1>
+          </div>
+        </div>
+      </section>
+    <div class="main-container">
+      <section class="second-container">
+        <picture>
+          <source srcset="./images/desktop/image-interactive.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-interactive.jpg" alt="Man with VR lenses" srcset="">
+          </picture>
+          <div class="content-container">
+            <h2>The leader in interactive VR</h2>
+            <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
   projects for some of the best companies around the globe. Our award-winning 
   creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  to their brand.</p>
+          </div>
+      </section>
+      <section class="third-container">
+        <h2>Our creations</h2>
+        <div class="gallery-container">
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-deep-earth.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-deep-earth.jpg" alt="Earth from space" srcset="">
+          <figcaption>Deep earth</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-night-arcade.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-night-arcade.jpg" alt="Arcade at night" srcset="">
+          <figcaption>Night arcade</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-soccer-team.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-soccer-team.jpg" alt="Man playing soccer" srcset="">
+          <figcaption>Soccer team vr</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-grid.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-grid.jpg" alt="Car" srcset="">
+          <figcaption>The grid</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-from-above.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-from-above.jpg" alt="Highway from above" srcset="">
+          <figcaption>From up above vr</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-pocket-borealis.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-pocket-borealis.jpg" alt="Aurora borealis" srcset="">
+          <figcaption>Pocket borealis</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-curiosity.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-curiosity.jpg" alt="'Curiosity' robot in Mars" srcset="">
+          <figcaption>The curiosity</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          
+        <div class="picture-container">
+        <picture>
+          <source srcset="./images/desktop/image-fisheye.jpg" media="(min-width:768px)">
+          <img src="./images/mobile/image-fisheye.jpg" alt="fisheye picture" srcset="">
+          <figcaption>Make it fisheye</figcaption>
+          </picture>
+          <div class="overlay"></div>
+        </div>  
+          <a href="#" class="see-btn">See all</a>
+        </div>
+      </section>
+      </div>
+    </main>
+      <footer>
+        <div class="footer-container">
+        <img src="./images/logo.svg" alt="Loopstudios logo" srcset="" class="logo">
+        <nav class="footer-nav">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </nav>
+        <div class="social-icons-container">
+          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="copyright">© 2024 Loopstudios. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
 
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
+  
+  <script src="./app/app.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/jenn-acosta7/">Jenn Acosta</a>.
   </div>
 </body>
 </html>
